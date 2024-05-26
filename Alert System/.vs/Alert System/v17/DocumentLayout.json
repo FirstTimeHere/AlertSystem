@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\GitHub\\AlertSystem\\Alert System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A1A537D5-1D85-B494-B7DE-34B2934F2944}|Assembly-CSharp.csproj|e:\\github\\alertsystem\\alert system\\assets\\furnishedcabin\\scripts\\thief.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1A537D5-1D85-B494-B7DE-34B2934F2944}|Assembly-CSharp.csproj|solutionrelative:assets\\furnishedcabin\\scripts\\thief.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1A537D5-1D85-B494-B7DE-34B2934F2944}|Assembly-CSharp.csproj|e:\\github\\alertsystem\\alert system\\assets\\furnishedcabin\\scripts\\alarmsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1A537D5-1D85-B494-B7DE-34B2934F2944}|Assembly-CSharp.csproj|solutionrelative:assets\\furnishedcabin\\scripts\\alarmsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1A537D5-1D85-B494-B7DE-34B2934F2944}|Assembly-CSharp.csproj|E:\\GitHub\\AlertSystem\\Alert System\\assets\\furnishedcabin\\scripts\\moveobjectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1A537D5-1D85-B494-B7DE-34B2934F2944}|Assembly-CSharp.csproj|solutionrelative:assets\\furnishedcabin\\scripts\\moveobjectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1A537D5-1D85-B494-B7DE-34B2934F2944}|Assembly-CSharp.csproj|E:\\GitHub\\AlertSystem\\Alert System\\assets\\furnishedcabin\\scripts\\moveableobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1A537D5-1D85-B494-B7DE-34B2934F2944}|Assembly-CSharp.csproj|solutionrelative:assets\\furnishedcabin\\scripts\\moveableobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Thief.cs",
+              "DocumentMoniker": "E:\\GitHub\\AlertSystem\\Alert System\\Assets\\FurnishedCabin\\Scripts\\Thief.cs",
+              "RelativeDocumentMoniker": "Assets\\FurnishedCabin\\Scripts\\Thief.cs",
+              "ToolTip": "E:\\GitHub\\AlertSystem\\Alert System\\Assets\\FurnishedCabin\\Scripts\\Thief.cs",
+              "RelativeToolTip": "Assets\\FurnishedCabin\\Scripts\\Thief.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T16:31:03.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AlarmSystem.cs",
+              "DocumentMoniker": "E:\\GitHub\\AlertSystem\\Alert System\\Assets\\FurnishedCabin\\Scripts\\AlarmSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\FurnishedCabin\\Scripts\\AlarmSystem.cs",
+              "ToolTip": "E:\\GitHub\\AlertSystem\\Alert System\\Assets\\FurnishedCabin\\Scripts\\AlarmSystem.cs",
+              "RelativeToolTip": "Assets\\FurnishedCabin\\Scripts\\AlarmSystem.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowDUAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T16:21:23.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MoveableObject.cs",
+              "DocumentMoniker": "E:\\GitHub\\AlertSystem\\Alert System\\Assets\\FurnishedCabin\\Scripts\\MoveableObject.cs",
+              "RelativeDocumentMoniker": "Assets\\FurnishedCabin\\Scripts\\MoveableObject.cs",
+              "ToolTip": "E:\\GitHub\\AlertSystem\\Alert System\\Assets\\FurnishedCabin\\Scripts\\MoveableObject.cs",
+              "RelativeToolTip": "Assets\\FurnishedCabin\\Scripts\\MoveableObject.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T16:16:53.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MoveObjectController.cs",
+              "DocumentMoniker": "E:\\GitHub\\AlertSystem\\Alert System\\Assets\\FurnishedCabin\\Scripts\\MoveObjectController.cs",
+              "RelativeDocumentMoniker": "Assets\\FurnishedCabin\\Scripts\\MoveObjectController.cs",
+              "ToolTip": "E:\\GitHub\\AlertSystem\\Alert System\\Assets\\FurnishedCabin\\Scripts\\MoveObjectController.cs",
+              "RelativeToolTip": "Assets\\FurnishedCabin\\Scripts\\MoveObjectController.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAIwJIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T16:14:20.81Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
