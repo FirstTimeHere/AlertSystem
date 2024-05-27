@@ -8,16 +8,18 @@ public class AlarmSystem : MonoBehaviour
     [SerializeField] private Thief _thief;
 
     private AudioSource _alarmAudioSource;
-    private bool _isAttacked;
 
     private float _minVolume = 0f;
     private float _maxVolume = 1f;
+
+    private bool _isAttacked;
 
     private void Awake()
     {
         _alarmAudioSource = GetComponent<AudioSource>();
         _alarmAudioSource.clip = _alarmSound;
         _alarmAudioSource.loop = true;
+        _alarmAudioSource.volume = _minVolume;
     }
 
     private void Update()
@@ -28,7 +30,7 @@ public class AlarmSystem : MonoBehaviour
         }
         else
         {
-            _alarmAudioSource.volume = Mathf.MoveTowards(_alarmAudioSource.volume, _minVolume, Time.deltaTime);
+            _alarmAudioSource.volume = Mathf.MoveTowards(_alarmAudioSource.volume, _minVolume, Time.deltaTime * 0.1f);
         }
     }
 
