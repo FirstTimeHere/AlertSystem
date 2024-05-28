@@ -353,10 +353,6 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/FurnishedCabin/Scripts/AlarmSystem.cs"
-"Assets/FurnishedCabin/Scripts/MoveableObject.cs"
-"Assets/FurnishedCabin/Scripts/MoveObjectController.cs"
-"Assets/FurnishedCabin/Scripts/Player/PlayerLook.cs"
-"Assets/FurnishedCabin/Scripts/Player/PlayerMove.cs"
 "Assets/FurnishedCabin/Scripts/Thief.cs"
 -langversion:9.0
 /deterministic

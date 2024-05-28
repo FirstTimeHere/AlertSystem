@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Thief : MonoBehaviour
@@ -20,16 +18,21 @@ public class Thief : MonoBehaviour
 
     private void Update()
     {
+       CanWork();
+    }
+
+    private void CanWork()
+    {
         if (_isAlarmNotDetected)
         {
             transform.Translate(Vector3.forward * _speed * Time.deltaTime);
         }
         else
         {
-            transform.Translate(Vector3.back * _runSpeed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, _spawnTransform, _runSpeed * Time.deltaTime);
         }
 
-        if (_alarmSystem.GetVolume() == 1f)
+        if (_alarmSystem.GetVolume() >= 0.5f)
         {
             _isAlarmNotDetected = false;
         }

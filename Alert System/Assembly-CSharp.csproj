@@ -61,10 +61,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\FurnishedCabin\Scripts\AlarmSystem.cs" />
-    <Compile Include="Assets\FurnishedCabin\Scripts\MoveableObject.cs" />
-    <Compile Include="Assets\FurnishedCabin\Scripts\Player\PlayerLook.cs" />
-    <Compile Include="Assets\FurnishedCabin\Scripts\Player\PlayerMove.cs" />
-    <Compile Include="Assets\FurnishedCabin\Scripts\MoveObjectController.cs" />
     <Compile Include="Assets\FurnishedCabin\Scripts\Thief.cs" />
   </ItemGroup>
   <ItemGroup>
