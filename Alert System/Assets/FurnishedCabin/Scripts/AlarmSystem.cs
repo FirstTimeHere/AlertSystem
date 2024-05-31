@@ -1,4 +1,4 @@
-using Unity.VisualScripting;
+using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
@@ -6,57 +6,74 @@ public class AlarmSystem : MonoBehaviour
 {
     [SerializeField] private AudioClip _alarmSound;
 
+    private Home _home;
+
     private AudioSource _alarmAudioSource;
 
     private float _minVolume = 0f;
     private float _maxVolume = 1f;
-    private float _reactionTimeAlarm = 3f;
-    private float _reactionTimeAlarmCalmDown = 0.1f;
+    private float _reactionTimeAlarm = 2f;
 
-    private bool _isAttacked;
+    private Coroutine _reactionCoroutine;
 
     private void Awake()
     {
         _alarmAudioSource = GetComponent<AudioSource>();
+        _home = GetComponent<Home>();
+
         _alarmAudioSource.clip = _alarmSound;
         _alarmAudioSource.loop = true;
         _alarmAudioSource.volume = _minVolume;
         _alarmAudioSource.enabled = false;
     }
 
-    private void Update()
+    private void OnEnable()
     {
-        if (_isAttacked && _alarmAudioSource.enabled)
-        {
-            _alarmAudioSource.volume = Mathf.MoveTowards(_alarmAudioSource.volume, _maxVolume, Time.deltaTime * _reactionTimeAlarm);
-        }
-        else
-        {
-            _alarmAudioSource.volume = Mathf.MoveTowards(_alarmAudioSource.volume, _minVolume, Time.deltaTime * _reactionTimeAlarmCalmDown);
-        }
+        _home.SystemTriggerd += OnTriggered;
+        _home.SystemDeactivaed += OnDisabled;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnDisable()
     {
-        if (other.gameObject)
-        {
-            _alarmAudioSource.enabled = true;
-            _alarmAudioSource.Play();
-            _isAttacked = true;
-        }
+        _home.SystemTriggerd -= OnTriggered;
+        _home.SystemDeactivaed -= OnDisabled;
     }
 
-    //private void OnTriggerExit(Collider other)
-    //{
-    //    if (other.gameObject)
-    //    {
-    //        _alarmAudioSource.enabled = false;
-    //        _isAttacked = false;
-    //    }
-    //}
-
-    public float GetVolume()
+    private void OnTriggered()
     {
-        return _alarmAudioSource.volume;
+        _alarmAudioSource.enabled = true;
+
+        if (_reactionCoroutine != null)
+        {
+            StopCoroutine(_reactionCoroutine);
+        }
+
+        _reactionCoroutine = StartCoroutine(ChangeVolume(_maxVolume));
+    }
+
+    private void OnDisabled()
+    {
+        if (_reactionCoroutine != null)
+        {
+            StopCoroutine(_reactionCoroutine);
+        }
+
+        _reactionCoroutine = StartCoroutine(ChangeVolume(_minVolume));
+
+    }
+
+    private IEnumerator ChangeVolume(float volume)
+    {
+        while (volume != _alarmAudioSource.volume)
+        {
+            _alarmAudioSource.volume = Mathf.MoveTowards(_alarmAudioSource.volume, volume, Time.deltaTime * _reactionTimeAlarm);
+
+            yield return null;
+        }
+
+        if (_alarmAudioSource.volume == _minVolume)
+        {
+            _alarmAudioSource.enabled = false;
+        }
     }
 }
