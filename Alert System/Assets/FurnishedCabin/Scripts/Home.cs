@@ -4,22 +4,16 @@ using UnityEngine;
 [RequireComponent(typeof(AlarmSystem))]
 public class Home : MonoBehaviour
 {
-    public event  Action SystemTriggerd;
-    public event  Action SystemDeactivaed;
+    public event  Action Triggerd;
+    public event  Action Deactivaed;
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject)
-        {
-            SystemTriggerd?.Invoke();
-        }
+        Triggerd?.Invoke();
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if(other.gameObject)
-        {
-            SystemDeactivaed?.Invoke();
-        }
+        Deactivaed?.Invoke();
     }
 }
